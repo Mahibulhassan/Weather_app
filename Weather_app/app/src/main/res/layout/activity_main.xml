@@ -3,16 +3,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/weather_pic"
     android:layout_height="match_parent"
     tools:context=".Ui.view.MainActivity">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/seaarch_ciyName"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Search City Name..."
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_search"
+        app:layout_constraintTop_toBottomOf="@+id/seaarch_ciyName"
+        android:text="Search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="MissingConstraints"/>
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_temperature"
+        android:layout_width="wrap_content"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Temperature is : "
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
