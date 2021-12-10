@@ -1,4 +1,4 @@
-   binding!!.WebView.webViewClient = WebViewClient()
+        binding!!.WebView.webViewClient = WebViewClient()
         binding!!.WebView.loadUrl("https://docs.google.com/forms/d/101uGRBM_oiwx4sipTbp6We5lmqO4HVJxME9sOv1FOAg/viewform?edit_requested=true")
         val websettings = binding!!.WebView.settings
         websettings.javaScriptEnabled = true
@@ -20,8 +20,6 @@
             }
 
         })
-        
-        
         
         veb view fragment er vitor
         
